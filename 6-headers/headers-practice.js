@@ -16,7 +16,7 @@ async function getLocationResponse(url, apiKey) {
       "Content-Type": "application/json",
     },
   });
-  return response.json();
+  return await response.json();
 }
 
 async function putLocation(url, apiKey, data) {
@@ -29,7 +29,7 @@ async function putLocation(url, apiKey, data) {
     },
     body: JSON.stringify(data),
   });
-  return response.json();
+  return await response.json();
 }
 
 const apiKey = generateKey();

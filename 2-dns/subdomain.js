@@ -13,7 +13,7 @@ async function getItemData(domain) {
       },
     }
   );
-  return response.json();
+  return await response.json();
 }
 
 function generateKey() {

@@ -28,7 +28,7 @@ async function getItemData() {
     "https://api.boot.dev/v1/courses_rest_api/learn-http/items",
     getSettings()
   );
-  return response.json();
+  return await response.json();
 }
 
 async function runTest() {

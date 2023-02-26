@@ -1,6 +1,6 @@
 async function fetchLeaderBoard() {
   const response = await fetch("https://fantasyquest.servers");
-  return response.json();
+  return await response.json();
 }
 
 async function run() {
